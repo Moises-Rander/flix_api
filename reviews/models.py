@@ -11,7 +11,7 @@ class Review(models.Model):
             MaxValueValidator(5, 'A avaliação não pode ser superior a 5 estrelas.'),
         ]
     )
-    coment = models.TextField(null=True, blank=True)
+    comments = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return self.movie.title
